@@ -4,6 +4,9 @@
 void win32_advance_frame(app_state_t* app_state);
 void win32_prepare_frame(app_state_t* app_state);
 void win32_end_frame(app_state_t* app_state);
+#elif __DREAMCAST__
+// Dreamcast platform
+bool dc_init_opengl(app_state_t* app_state);
 #else
 void linux_advance_frame(app_state_t* app_state);
 void linux_prepare_frame(app_state_t* app_state);

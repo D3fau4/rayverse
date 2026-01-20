@@ -11,6 +11,7 @@
 #include <kos.h>
 #include <GL/gl.h>
 #include <GL/glu.h>
+#include <dreamcast/SDL2/SDL.h>
 #else
 // Headers specific to Linux / macOS
 #include <SDL.h>
@@ -68,6 +69,7 @@
 // Source files specific to Dreamcast
 #include "dc_main.c"
 #include "dc_logger.c"
+#include "dc_opengl.c"
 #else
 // Source files specific to Linux / macOS
 #include "linux_opengl.c"
