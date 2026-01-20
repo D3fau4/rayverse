@@ -67,6 +67,7 @@
 #elif __DREAMCAST__
 // Source files specific to Dreamcast
 #include "dc_main.c"
+#include "dc_logger.c"
 #else
 // Source files specific to Linux / macOS
 #include "linux_opengl.c"
