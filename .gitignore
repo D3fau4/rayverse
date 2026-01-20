@@ -20,3 +20,4 @@ Release/
 *.ilk
 *.obj
 *.sbr
+*.elf

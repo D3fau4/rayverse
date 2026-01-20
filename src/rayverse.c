@@ -6,6 +6,11 @@
 #include <dsound.h>
 #include <GL/gl.h>
 #include <GL/glu.h>
+#elif __DREAMCAST__
+// Headers specific to Dreamcast
+#include <kos.h>
+#include <GL/gl.h>
+#include <GL/glu.h>
 #else
 // Headers specific to Linux / macOS
 #include <SDL.h>
@@ -59,6 +64,9 @@
 #include "win32_opengl.c"
 #include "win32_sound.c"
 #include "win32_main.c"
+#elif __DREAMCAST__
+// Source files specific to Dreamcast
+#include "dc_main.c"
 #else
 // Source files specific to Linux / macOS
 #include "linux_opengl.c"

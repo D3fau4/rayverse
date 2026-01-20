@@ -111,6 +111,7 @@ typedef struct win32_sound_output_t {
 	IDirectSoundBuffer* secondary_buffer;
 	bool is_valid;
 } win32_sound_output_t;
+#elif __DREAMCAST__
 #else
 typedef struct sdl_sound_output_t {
     u32 samples_per_second;
@@ -140,6 +141,7 @@ typedef struct win32_state_t {
     HCURSOR cursor;
     win32_sound_output_t sound_output;
 } win32_state_t;
+#elif __DREAMCAST__
 #else
 typedef struct sdl_state_t {
     SDL_Window* window;
@@ -167,6 +169,7 @@ typedef struct surface_t {
 typedef struct app_state_t {
 #ifdef _WIN32
 	win32_state_t win32;
+#elif __DREAMCAST__
 #else
     sdl_state_t sdl;
 #endif
